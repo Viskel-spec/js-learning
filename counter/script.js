@@ -1,6 +1,7 @@
 const count = document.querySelector("#count");
 const btnPlus = document.querySelector("#btn-plus");
 const btnMinus = document.querySelector("#btn-minus");
+const btnReset = document.querySelector('#btn-reset')
 
 let counter = 0;
 
@@ -15,3 +16,8 @@ btnMinus.addEventListener("click", function () {
         count.textContent = counter;
     }
 });
+
+btnReset.addEventListener('click', function () {
+    counter = 0;
+    count.textContent = counter;
+} )
